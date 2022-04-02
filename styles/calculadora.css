@@ -1,0 +1,33 @@
+body{
+    width:50% ;
+   margin-left: 25%;
+   border: solid black 5px;
+   margin-top: 4%;
+   background-image: url("../image/analysis-statistics-economic-calculation-calculator-260nw-1688285446.jpg");
+   border-radius: 5%;
+}
+table {
+    width: 100%;
+    background-color: rgb(86, 223, 187);
+  }
+  h1{
+    text-align: center;
+  }
+  button {
+    width: 100%;
+    font-size: 450%;
+    border-radius: 45%;
+    background-color: rgb(198, 227, 239);
+  
+  }
+  .ac {
+    color: red;
+  }
+  label{
+    width: 100%;
+    background-color: rgb(204, 204, 239);
+    margin-left: 70%;
+    }
+
+
+  td:hover, td:active {font-size: 150%;}
