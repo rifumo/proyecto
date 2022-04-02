@@ -1,4 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap');
+
+/*   */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body{
-    background-image: url("../image/pngtree-mathematics-education-calculator-ruler-hand-drawn-background-image_340649.jpg");
-    ba
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Cabecera Body */
+header{
+    background: #96bce5;   
+/*    background: linear-gradient(to right, #24FE41, #FDFC47); */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 95%;
+    max-width:1200px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;  
+}
+
+#header img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    width: auto;
+    animation: moverArriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 35px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{
+    font-size: 20px;
+    animation: moverIzquierda 1s ease-in;
+}
+.textos h3{
+    font-size: 20px;
+    animation: moverDerecha 1s ease-in;
+}
+
+form{
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    
+    animation: moverArriba 1s ease-in;
+}
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 1000;
+	color: #fff;
+}
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+
+.wave{
+    height:100px ;
+    width: 100%;
+    background: #FDFC47;  
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+    background: linear-gradient(to right, #24FE41, #FDFC47); 
+     
+}
+
+/* Animaciones */
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    #header img{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:800px){
+    #header img{
+        height: 370px;
+    }
+
+    .textos h1{
+        font-size: 25px;
+    }
 }
