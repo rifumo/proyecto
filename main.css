@@ -1,0 +1,14 @@
+body{
+    width:50% ;
+   margin-left: 25%;
+}
+table {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    font-size: 550%;
+  }
+  .ac {
+    color: red;
+  }
