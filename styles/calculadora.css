@@ -5,7 +5,6 @@ body{
    margin-top: 4%;
    background-image: url("../image/analysis-statistics-economic-calculation-calculator-260nw-1688285446.jpg");
    border-radius: 5%;
-
 }
 table {
     width: 100%;
@@ -17,7 +16,7 @@ table {
   button {
     width: 100%;
     font-size: 450%;
-border-radius: 10px;
+    border-radius: 10px;
     background-color: rgb(198, 227, 239);
   }
   .ac {
