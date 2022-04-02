@@ -8,7 +8,7 @@ body{
 }
 table {
     width: 100%;
-    background-color: rgb(86, 223, 187);
+    background-color: rgb(163, 170, 168);
   }
   h1{
     text-align: center;
@@ -16,7 +16,7 @@ table {
   button {
     width: 100%;
     font-size: 450%;
-    border-radius: 45%;
+    border-radius: 15%;
     background-color: rgb(198, 227, 239);
   
   }
