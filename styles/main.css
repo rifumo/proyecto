@@ -55,28 +55,17 @@ header{
 .textos h2{
     font-size: 20px;
     animation: moverIzquierda 1s ease-in;
-}
-.textos h3{
-    font-size: 20px;
-    animation: moverDerecha 1s ease-in;
+    text-align: justify;
 }
 
-form{
-    animation: moverIzquierda 1s ease-in;
-}
+
 
 .textos a{
     display: inline-block;
     color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-top: 30px;
     border: 1px solid #fff;
-    width: 150px;
     border-radius: 3px;
-    text-align: center;
-    padding: 10px 0;
-    animation: moverArriba 1s ease-in;
+    animation: moverIzquierda 5s ease-in;
 }
 
 
