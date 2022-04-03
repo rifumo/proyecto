@@ -16,25 +16,14 @@ body{
 /* Cabecera Body */
 header{
     background: #96bce5;   
-/*    background: linear-gradient(to right, #24FE41, #FDFC47); */
-    height: auto;
+    background: linear-gradient(to right, #052cdb, #f5f5d2); 
+    height: 46.8rem;
     padding: 48px;
     width: 100%;
 }
 
 
-nav{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
 
-nav a{
-    color: #fff;
-    text-decoration: none;
-}
 
 .contenedor{
     width: 95%;
@@ -55,7 +44,7 @@ nav a{
 
 .textos{
     width: 50%;
-    color: #fff;
+    color:black;
 }
 
 .textos h1{
@@ -87,29 +76,10 @@ form{
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
-    
     animation: moverArriba 1s ease-in;
 }
-.icono{
-    display: block;
-    animation: moverIzquierda 1s ease-in;
-    z-index: 1000;
-	color: #fff;
-}
-.uno{
-    -webkit-clip-path: circle(0% at 0 0);
-    clip-path: circle(0% at 0 0);
-}
 
 
-.wave{
-    height:100px ;
-    width: 100%;
-    background: #FDFC47;  
-    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-    background: linear-gradient(to right, #24FE41, #FDFC47); 
-     
-}
 
 /* Animaciones */
 @keyframes moverIzquierda{
@@ -123,7 +93,6 @@ form{
         transform: translate(0);
     }
 }
-
 
 @keyframes moverDerecha{
     0%{
