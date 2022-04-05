@@ -1,0 +1,25 @@
+﻿/* add by oskar gelves*/
+.topnav {
+    width: 20%;
+    padding-right: 2px;
+    margin: inherit;
+    font: Helveltica;
+    font-style: italic; 
+    color: black;   
+    background-color: rgba(32, 188, 113, 0.15);
+   	
+        }
+
+    .topnav a {
+        float: left;
+        text-align: center;
+        padding: 5px 16px;
+        font-size: 13px;
+    
+	
+		
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+        }

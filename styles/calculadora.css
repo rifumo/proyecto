@@ -1,15 +1,18 @@
+/* Modify by Oskar Gelves*/
 body{
-    width:50% ;
-   margin-left: 25%;
+    width: 100%; 
+    max-width: fit-content;
+  
    border: solid black 5px;
-   margin-top: 4%;
-   background-image: url("../image/analysis-statistics-economic-calculation-calculator-260nw-1688285446.jpg");
-   border-radius: 5%;
+   margin: 5%;
+   margin-left: auto;
+   margin-right: auto;   
+   /*background-image: url("../image/analysis-statistics-economic-calculation-calculator-260nw-1688285446.jpg");*/
+   border-radius: 10%;
+   
 }
-table {
-    width: 100%;
-    background-color: rgb(163, 170, 168);
-  }
+/* end Oskar Gelves*/
+
   h1{
     text-align: center;
   }
@@ -24,14 +27,17 @@ table {
   }
   label{
     width: 100%;
-    background-color: rgb(204, 204, 239);
+    
     margin-left: 70%;
     }
 
 
- /* td:hover, td:active {font-size: 150%;}*/
+ /* 
+ removed by Oskar Gelves
+ td:hover, td:active {font-size: 150%;}
 
  button:focus {
   color: red;
 }
 
+*/
