@@ -33,26 +33,31 @@ function computa(){
    
     if (strOpera.valueOf() == Number(0)) {
         index = Number(n1) + Number(n2); 
-        alert("Resultado de la Suma es = "+ index);       
+       
+        swal("El resultado de la suma de los numeros", + n1 + " + " + n2 +
+        "\n es " + index , "success")  ;
     }
     if (strOpera.valueOf() == Number(1)) {
         if (n2.valueOf() > Number(0)) {
             index = Number(n1) / Number(n2);
-            alert("Resultado de la División es = " + index);
+            swal("El resultado de la division de los numeros", + n1 + " / " + n2 +
+            "\n es " + index , "success")  ;
         } else {
-            alert("No se Puede Dividir por CERO!");
+            swal("No se Puede Dividir por CERO!", " " , "error")  ;
         }
        
     }
 
     if (strOpera.valueOf() == Number(2)) {
         index = Number(n1) * Number(n2);
-        alert("Resultado de la Multiplicación es = " + index);
+        swal("El resultado de la multiplicacion de los numeros", + n1 + " * " + n2 +
+        "\n es " + index , "success")  ;
     }
 
     if (strOpera.valueOf() == Number(3)) {
         index = Number(n1) - Number(n2);
-        alert("Resultado de la Resta es = " + index);
+        swal("El resultado de la resta de los numeros", + n1 + " - " + n2 +
+            "\n es " + index , "success")  ;
     }
 
   
