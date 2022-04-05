@@ -16,7 +16,7 @@ body{
 /* Cabecera Body */
 header{
     background: #96bce5;   
-    background: linear-gradient(to right, #052cdb, #f5f5d2); 
+    background: linear-gradient(to right,  #8fe3ff, #e4f4fd); 
     height: 46.8rem;
     padding: 48px;
     width: 100%;
@@ -43,30 +43,40 @@ header{
 }
 
 .textos{
-    width: 50%;
-    color:black;
+    width: 56%;
+    color: #6c6464;
 }
 
 .textos h1{
-    font-size: 35px;
+    color:  #04545c ;
+    font-size: 30px;
     animation: moverDerecha 1s ease-in;
 }
 
 .textos h2{
-    font-size: 20px;
+    font-size: 18px;
     animation: moverIzquierda 1s ease-in;
     text-align: justify;
 }
 
-
+li{
+    list-style-type: none;
+}
 
 .textos a{
     display: inline-block;
     color: #fff;
+    font-size: 18px;
     border: 1px solid #fff;
     border-radius: 3px;
-    animation: moverIzquierda 5s ease-in;
+    animation: moverIzquierda 2s ease-in;
+    background-color:  #94343c;
 }
+
+.integrantes{
+    color: #04545c;
+}
+
 
 
 
