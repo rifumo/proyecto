@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--add by Oskar Gelves-->
+    <link href="../kube/dist/css/kube.min.css" rel="stylesheet" />
+    <script src="../script/jquery-3.6.0.min.js"></script>
+    <link href="../kube/dist/css/kube.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../styles/Metodos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- end Oskar Gelves-->
+    <link rel="stylesheet" href="../styles/calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+   
+<!--add by Oskar Gelves-->
+<!-- GRID -->
+<div class="wrapper">
+  <div class="inner-wrapper">
+      <h1 class=" h1 text-centered ">Calculadora B&aacute;sica</h1>
+      <!-- Main Sidebar units-row  is-row Container -->
+      <div class="is-row ">
+       
+          <div class="is-col is-90 topnav">
+              <div class="is-navbar-container ">
+                  <div class="is-brand">
+                      <!-- Brand Logo -->
+                      <b href="#" class="is-logo">
+                          <img src="../image/cal.jpg"
+                               alt="Calculadora"
+                               style="opacity: .8; width:15%; height:15%" />
+                          <span class="medium">Operaciones</span>
+                      </b>
+                  </div>
+                  <!-- navbar primary -->
+                  <div class="is-navbar">
+
+
+                      <!-- Sidebar Menu -->
+                      <nav>
+                          <ul role="menu" data-accordion="false">
+                             
+                              <li class="nav-item">
+                                  <a href="#" id="suma" name="suma" role="button" onclick="btnsuma()" >
+                                      <i class=" fa fa-check"></i>
+                                      <p>Adici&oacute;n</p>
+                                  </a>
+                              </li>
+
+                              <li class="nav-item"  >
+                                  <a href="#"  id= "multiplica" role="button" onclick="btnmultiplica()" class="nav-link is-push-right">
+                                      <span class=" fa fa-check"></span>
+                                      <p>Multiplicaci&oacute;n</p>
+                                  </a>
+                              </li>
+
+                              <li class="nav-item" >
+                                  <a href="#" id="resta" role="button" onclick="btnresta()"  class="nav-link is-push-right">
+                                      <span class=" fa fa-check"></span>
+                                      <p>Sustracci&oacute;n</p>
+                                  </a>
+                              </li>
+
+                              <li class="nav-item">
+                                  <a href="#" id="divide" role="button" onclick="btndivide()" class="nav-link is-push-right">
+                                      <span class="fa fa-check"></span>
+                                      <p>Divisi&oacute;n</p>
+                                  </a>
+                              </li>
+
+
+                          </ul>
+                      </nav>
+                      <!-- /.sidebar-menu -->
+                  </div>
+                  <!-- /.sidebar -->
+                  </div>
+
+              </div>
+
+          </div>
+
+     
+
+          <!-- Main content -->
+      <section class="content">
+          <div class="container-fluid">
+              <div class="is-row">
+                  <div class="is-col is-100">
+                      <div class="caret">
+                          <div class="card-title">
+                              <h2>Operandos</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="is-row">
+                  <div class="is-col is-10">
+                      &nbsp;
+                  </div>
+                  <div class="is-col is-80">
+
+                      <form id="formComputa" name="formComputa">
+                          <div class=" is-row">
+                            
+                              <div class="is-col is-30 form-item">
+                                  <label class="label is-focus" for="num1"><i class="fa fa-pencil"></i> &nbsp;N&uacute;mero 1: &nbsp;</label>
+                              </div>
+                              <div class="is-col is-10">
+                                &nbsp;
+                            </div>
+                              <div class="is-col is-60 form-item">
+
+                                  <input type="number" name="num1" id="num1" class="form-control width-100" placeholder="numero 1" required>
+                              </div>
+
+                          </div>
+
+                          <div class=" is-row">
+                              
+                              <div class="is-col is-30 form-item">
+                                  <label class="label is-focus" for="num2"><i class="fa fa-pencil"></i> &nbsp;N&uacute;mero 2:&nbsp;</label>
+                              </div>
+                              <div class="is-col is-10">
+                                &nbsp;
+                            </div>
+                              <div class="is-col is-60 form-item">
+                                  <input type="number" name="num2" id="num2" class="form-control  width-100" placeholder="numero 2" required>
+                              </div>
+                          </div>
+                          <div class=" is-row">
+                              <div class="is-col is-40">
+                                &nbsp;
+                              </div>
+
+                              <div class="is-col is-60 form-item">
+                                  <b name="operac" id="operac" class="width-100 topnav"> Seleccione una operaci&oacute;n</b>
+                              </div>
+                          </div>
+
+
+                          <div class=" is-row">
+                              <div class="is-col is-90">
+
+                                  <button class="button form-item" id="compu" name="compu" onclick="computa()"> Calcular </button>
+
+                              </div>
+                          </div>
+
+
+
+
+                      </form>
+
+
+                  </div><!--///-->
+                  <div class="is-col is-10">
+                      &nbsp;
+                  </div>
+              </div>
+
+
+
+
+
+          </div>
+      </section>
+   </div><!-- /.container-fluid -->            
+</div>
+<!-- /.content-wrapper -->
+
+<footer class="main-footer">
+<div class="float-right d-none d-sm-block">
+</div>
+<strong> Usamos el kube frameworks para Calculadura.html </strong>
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+<!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+<script src="../script/jquery-3.6.0.intellisense.js"></script>
+
+<!-- Kube -->
+<script src="../kube/dist/js/kube.min.js"></script>
+
+
+
+
+
+<!-- Page specific script -->
+<script src="../script/Metodos.js"></script>
+
+
+
+
+<!-- end Oskar Gelves-->
+    
+    
+    <label id="incio" style="font-size: 12px;"><a href="../index.html">IR AL INICIO</a></label>
+</body>
+</html>
