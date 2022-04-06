@@ -1,212 +1,41 @@
-<! DOCTYPE html>
-<html lang="es">
-<cabeza>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--add por Oskar Gelves-->
-    <enlace href="/proyecto/kube/dist/css/kube.min.css" rel="hoja de estilo" />
-    <script src="/proyectoscript/jquery-3.6.0.min.js"></script>
-    <enlace href="/proyecto/kube/dist/css/kube.min.css" rel="hoja de estilo" />
-    <link rel="hoja de estilo" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <enlace href="/proyecto/styles/Metodos.css" rel="hoja de estilo" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<!-- final Oskar Gelves-->
-    <link rel="hoja de estilo" href="/proyecto/styles/calculadora.css">
-    <título>Calculadora</título>
-</cabeza>
-<cuerpo>
-   
-<!--add por Oskar Gelves-->
-<!-- CUADRÍCULA -->
-<div class="wrapper">
-  <div class="inner-wrapper">
-      <h1 class=" h1 centrado en texto ">Calculadora B&aacute;sica</h1>
-      <!-- Main Sidebar units-row  is-row Container -->
-      <div class="is-row ">
-       
-          <div class="is-col is-90 topnav">
-              <div class="is-navbar-container ">
-                  <div class="is-brand">
-                      logotipo de la marca <!-- -->
-                      <b href="#" class="is-logo">
-                          <img src="/proyecto/image/cal.jpg"
-                               alt="Calculadora"
-                               style="opacidad: .8; ancho:15%; alto:15%" />
-                          <span class="medium">Operaciones</span>
-                      </b>
-                  </div>
-                  <!-- de la barra de navegación principal -->
-                  <div class="is-navbar">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Calculadora basica</title>
+</head>
 
+<body>
+    <header id="header" ; class="header">
+        <div class="contenedor">
+            <div class="textos">
+                <h1>Trabajo Final</h1>
+                <h2>
+                    <p>Sit quia deleniti qui consequuntur voluptatem ea totam molestiae sit impedit necessitatibus. Quo
+                        natus odio sed quibusdam aspernatur et tenetur quibusdam non repellat repudiandae id cupiditate
+                        harum a deleniti tempora id expedita incidunt! Aut harum sapiente et minus nostrum et quasi
+                        fugiat nam similique minus ex repellendus magni et deserunt voluptas. Est commodi temporibus aut
+                        enim optio hic optio quis quo deleniti officiis id error corporis?</p>
+                    <br>
+                    <p>INTEGRANTES</p>
+                    <ol>
+                        <li>sandra</li>
+                        <li>Oskar</li> <!-- add by Oskar Gelves-->
+                        <li>julian</li>
+                        <li>richard</li>
+                        <br>
+                    </ol>
+                </h2>
+                <button style="background-color: transparent; border: none;"> <a style="padding: 0.02rem;"
+                        href="./pages/Calculadora.html"> IR A LA CALCULADORA</a></button>
+            </div>
+            <img src="./image/academia-removebg-preview.png" alt="">
+        </div>
+    </header>
+</body>
 
-                      <!-- Menú de la barra lateral -->
-                      <nav>
-                          <ul role="menu" data-accordion="false">
-                             
-                              <li class="nav-item">
-                                  <a href="#" id="suma" name="suma" role="button" onclick="btnsuma()" >
-                                      <i class=" fa fa-check"></i>
-                                      <p>Adici&oacute;n</p>
-                                  </un>
-                              </li>
-
-                              <li class="nav-item"  >
-                                  <a href="#" id= "multiplicar" role="button" onclick="btnmultiplica()" class="nav-link is-push-right">
-                                      <span class=" fa fa-check"></span>
-                                      <p>Multiplicaci&oacute;n</p>
-                                  </un>
-                              </li>
-
-                              <li class="nav-item" >
-                                  <a href="#" id="resta" role="button" onclick="btnresta()"  class="nav-link is-push-right">
-                                      <span class=" fa fa-check"></span>
-                                      <p>Sustracci&oacute;n</p>
-                                  </un>
-                              </li>
-
-                              <li class="nav-item">
-                                  <a href="#" id="divide" role="button" onclick="btndivide()" class="nav-link is-push-right">
-                                      <span class="fa fa-check"></span>
-                                      <p>Divisi&oacute;n</p>
-                                  </un>
-                              </li>
-
-
-                          </ul>
-                      </nav>
-                      <!-- /.sidebar-menu -->
-                  </div>
-                  <!-- /.sidebar -->
-                  </div>
-
-              </div>
-
-          </div>
-
-     
-
-          <!-- Contenido principal -->
-      <section class="contenido">
-          <div class="contenedor-fluido">
-              <div class="is-row">
-                  <div class="is-col is-100">
-                      <div class="caret">
-                          <div class="card-title">
-                              <h2>Operandos</h2>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="is-row">
-                  <div class="is-col is-10">
-                      &nbsp;
-                  </div>
-                  <div class="is-col is-80">
-
-                      <form id="formComputa" name="formComputa">
-                          <div class=" is-row">
-                            
-                              <div class="is-col is-30 form-item">
-                                  <label class="label is-focus" for="num1"><i class="fa fa-pencil"></i> &nbsp; N&uacute;mero 1: &nbsp; </etiqueta>
-                              </div>
-                              <div class="is-col is-10">
-                                &nbsp;
-                            </div>
-                              <div class="is-col is-60 form-item">
-
-                                  <input type="number" name="num1" id="num1" class="form-control width-100" placeholder="numero 1" requerido>
-                              </div>
-
-                          </div>
-
-                          <div class=" is-row">
-                              
-                              <div class="is-col is-30 form-item">
-                                  <label class="label is-focus" for="num2"><i class="fa fa-pencil"></i> &nbsp; N&uacute;mero 2:&nbsp; </etiqueta>
-                              </div>
-                              <div class="is-col is-10">
-                                &nbsp;
-                            </div>
-                              <div class="is-col is-60 form-item">
-                                  <input type="number" name="num2" id="num2" class="form-control  width-100" placeholder="numero 2" required>
-                              </div>
-                          </div>
-                          <div class=" is-row">
-                              <div class="is-col is-40">
-                                &nbsp;
-                              </div>
-
-                              <div class="is-col is-60 form-item">
-                                  <b name="operac" id="operac" class="width-100 topnav"> Seleccione una operaci&oacute;n</b>
-                              </div>
-                          </div>
-
-
-                          <div class=" is-row">
-                              <div class="is-col is-90">
-
-                                  <button class="button form-item" id="compu" name="compu" onclick="computa()"> Calcular </button>
-
-                              </div>
-                          </div>
-
-
-
-
-                      </forma>
-
-
-                  </div><!--///-->
-                  <div class="is-col is-10">
-                      &nbsp;
-                  </div>
-              </div>
-
-
-
-
-
-          </div>
-      </sección>
-   </div><!-- /.container-fluid -->            
-</div>
-<!-- /.content-wrapper -->
-
-<footer class="main-footer">
-<div class="float-right d-none d-sm-block">
-</div>
-<strong> Usamos el kube frameworks para Calculadura.html </strong>
-</pie de página>
-
-barra lateral de control de <!-- -->
-<aside class="control-sidebar control-sidebar-dark">
-<!-- contenido de la barra lateral de control va aquí -->
-</aparte>
-<!-- /.control-sidebar -->
-</div>
-<!-- ./envoltorio -->
-
-
-<script src="/proyecto/script/jquery-3.6.0.intellisense.js"></script>
-
-<!-- Kube -->
-<script src="/proyecto/kube/dist/js/kube.min.js"></script>
-
-
-
-
-
-<!-- Script específico de la página -->
-<script src="/proyecto/script/Metodos.js"></script>
-
-
-
-
-<!-- final Oskar Gelves-->
-    
-    
-    <label id="incio" style="font-size: 12px;" ><a href="index.html">IR AL INICIO</a></label>
-</cuerpo>
 </html>
