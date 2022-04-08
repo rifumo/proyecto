@@ -23,3 +23,14 @@
         .topnav a:hover {
             background-color: #ddd;
         }
+     
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        a:hover{
+            color: red;
+        }
