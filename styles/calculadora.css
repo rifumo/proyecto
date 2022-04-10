@@ -9,6 +9,7 @@ body{
    margin-right: auto;   
    /*background-image: url("../image/analysis-statistics-economic-calculation-calculator-260nw-1688285446.jpg");*/
    border-radius: 10%;
+   font-size-adjust: 0.75;
    
 }
 /* end Oskar Gelves*/
@@ -27,7 +28,7 @@ body{
   }
   label{
     width: 100%;
-    
+    font-size-adjust: 0.75;
     margin-left: 70%;
     }
 
