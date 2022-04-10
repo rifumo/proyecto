@@ -41,6 +41,7 @@
             background: #96bce5;   
             background: linear-gradient(to right,  #8fe3ff, #e4f4fd); 
             width: 100%;
+            color: rgba(2, 18, 213) !important;
           }
 
 .Labels{
