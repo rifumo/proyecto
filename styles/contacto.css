@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap');
+
+/*   */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Body */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #96bce5;   
+    background: linear-gradient(to right,  #8fe3ff, #e4f4fd); 
+    height: 46.8rem;
+    padding: 48px;
+    width: 100%;
+}
+
+
+/* Cabecera Body */
+
+nav{
+    display: flex;
+    padding-left: 55%;
+}
+
+nav a{
+    color: #94343c;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+a:hover {
+    display: block;
+    color: white;
+    background-color: #94343c51;
+    border-radius: 10px;
+}
+
+section{
+    border: solid rgb(15, 14, 14);
+    margin: auto;
+    width: 50vh;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+input{
+    border-radius: 3px;
+    border: solid rgb(179, 177, 177);
+    height: 25px;
+    margin: 3px;  
+}
+
+#nombreApellido input{
+
+    width: 44%;
+    background-color: rgb(241, 241, 239);
+}
+
+#correo input{
+
+    width: 95%;
+    background-color: rgb(241, 241, 239);
+}
+
+#mensaje{
+    width: 96%;
+
+}
+
+
+div p{
+    font-size: small;
+    text-align: justify;
+    
+}
+
+
+#enviar{
+    background-color: #94343c;
+    color: white;
+    width: 45%;
+    border: none;
+    text-align: center;
+}
+

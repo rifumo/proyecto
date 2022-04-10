@@ -22,14 +22,13 @@ body{
     border-radius: 10px;
     background-color: rgb(198, 227, 239);
   }
-  .ac {
-    color: red;
-  }
+ 
   label{
     width: 100%;
     
     margin-left: 70%;
     }
+
 
 
  /* 
