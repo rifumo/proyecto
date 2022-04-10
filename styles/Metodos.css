@@ -42,3 +42,10 @@
             background: linear-gradient(to right,  #8fe3ff, #e4f4fd); 
             width: 100%;
           }
+
+.Labels{
+            width: 100%;
+            font-size-adjust: 0.75;  
+            margin-left: 0%;
+           color: rgba(32, 188, 113);
+            }
