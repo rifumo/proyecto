@@ -1,4 +1,6 @@
 ﻿/* add by oskar gelves*/
+const form = document.getElementById('formComputa')
+form.addEventListener('submit', (e)=> e.preventDefault())
 
 var strOpera = 5;
 function btnsuma(){   
@@ -33,26 +35,51 @@ function computa(){
    
     if (strOpera.valueOf() == Number(0)) {
         index = Number(n1) + Number(n2); 
-       alert("la suma de los numeros es " +index);
+        swal({
+            title: `La suma de ${n1} + ${n2} = ${index}`,
+            icon: 'success',           
+        }).then(()=>{ 
+            form.reset()
+        })
     }
     if (strOpera.valueOf() == Number(1)) {
         if (n2.valueOf() > Number(0)) {
             index = Number(n1) / Number(n2);
-            alert("la division de los numeros es " +index);
+            swal({
+                title: `La division de ${n1} / ${n2} =  ${index}`,
+                icon: 'success',           
+            }).then(()=>{ 
+                form.reset()
+            })
         } else {
-            alert("No se Puede Dividir por CERO!")  ;
+            swal({
+                title: `No se Puede Dividir por CERO!`,
+                icon: 'error',
+            }).then(()=>{ 
+                form.reset()
+            })
         }
        
     }
 
     if (strOpera.valueOf() == Number(2)) {
         index = Number(n1) * Number(n2);
-        alert("la multiplicacion de los numeros es " +index);
+        swal({
+            title: `La multiplicacion de de ${n1} * ${n2} =  ${index}`,
+            icon: 'success',           
+        }).then(()=>{ 
+            form.reset()
+        })
     }
 
     if (strOpera.valueOf() == Number(3)) {
         index = Number(n1) - Number(n2);
-        alert("la resta de los numeros es " +index) ;
+        swal({
+            title: `La resta de de ${n1} - ${n2} =  ${index}`,
+            icon: 'success',           
+        }).then(()=>{ 
+            form.reset()
+        })
     }
 
   
