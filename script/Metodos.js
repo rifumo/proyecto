@@ -65,7 +65,7 @@ function computa(){
     if (strOpera.valueOf() == Number(2)) {
         index = Number(n1) * Number(n2);
         swal({
-            title: `La multiplicacion de de ${n1} * ${n2} =  ${index}`,
+            title: `La multiplicacion de ${n1} * ${n2} =  ${index}`,
             icon: 'success',           
         }).then(()=>{ 
             form.reset()
@@ -75,7 +75,7 @@ function computa(){
     if (strOpera.valueOf() == Number(3)) {
         index = Number(n1) - Number(n2);
         swal({
-            title: `La resta de de ${n1} - ${n2} =  ${index}`,
+            title: `La resta de ${n1} - ${n2} =  ${index}`,
             icon: 'success',           
         }).then(()=>{ 
             form.reset()
