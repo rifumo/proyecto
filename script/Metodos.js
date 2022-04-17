@@ -76,6 +76,7 @@ function computa(){
         var softMemory = document.getElementById("Memory");          
         console.log(Data.show());
         localStorage.setItem("RAM",JSON.stringify(Data) + softMemory.innerHTML);
+	softMemory.innerHTML = localStorage.getItem("RAM");
         swal({
             title: `La suma de ${n1} + ${n2} = ${index}`,
             icon: 'success',           
@@ -91,6 +92,7 @@ function computa(){
             var softMemory = document.getElementById("Memory");          
             console.log(Data.show());
             localStorage.setItem("RAM",JSON.stringify(Data) + softMemory.innerHTML);
+	    softMemory.innerHTML = localStorage.getItem("RAM");
             swal({
                 title: `La division de ${n1} / ${n2} =  ${index}`,
                 icon: 'success',           
@@ -115,6 +117,7 @@ function computa(){
         var softMemory = document.getElementById("Memory");          
         console.log(Data.show());
         localStorage.setItem("RAM",JSON.stringify(Data) + softMemory.innerHTML);
+	softMemory.innerHTML = localStorage.getItem("RAM");
         swal({
             title: `La multiplicacion de ${n1} * ${n2} =  ${index}`,
             icon: 'success',           
@@ -130,6 +133,7 @@ function computa(){
         var softMemory = document.getElementById("Memory");          
         console.log(Data.show());
         localStorage.setItem("RAM",JSON.stringify(Data) + softMemory.innerHTML);
+	softMemory.innerHTML = localStorage.getItem("RAM");
         swal({
             title: `La resta de ${n1} - ${n2} =  ${index}`,
             icon: 'success',           
