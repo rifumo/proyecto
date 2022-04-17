@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="../styles/calculadora.css">
     <title>Calculadora</title>
 </head>
-<body>
+<body onload="MemOpera()">
   <nav style="text-align: center;">
         <a class="menu" href="../index.html">Inicio</a>
         <a class="menu" href="../pages/QuienesSomos.html">¿Quienes Somos?</a>
@@ -158,9 +158,15 @@
 
                               </div>
                           </div>
-
-
-
+                          
+                          <div class=" is-row">
+                            <div class="is-col is-20">
+                                <button id="Clear"  class="button" onclick="borrar()">Borrar Memoria</button>
+                            </div> 
+                            <div class="is-col is-80">
+                                <textarea id="Memory">&nbsp;</textarea>
+                            </div>
+                        </div>
 
                       </form>
 
