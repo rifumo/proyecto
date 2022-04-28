@@ -33,12 +33,12 @@ const BaseDatos = class {
     }
 
 }
-var strOpera = 5;
+var strOpera = 4;
 
-function MemOpera(){
+/*function MemOpera(){
     var softMemory = document.getElementById("Memory");   
     softMemory.innerHTML = localStorage.getItem("RAM");
-}
+}*/
 function btnsuma(){   
     var oper = document.getElementById("operac");
     oper.innerHTML = "Suma";
